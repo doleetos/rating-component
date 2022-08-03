@@ -1,0 +1,116 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Overpass', sans-serif;
+    color: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: hsl(216, 12%, 8%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+#rate-container, #thank-you {
+    background-color: hsl(213, 19%, 18%);
+    border-radius: 25px;
+    padding: 2rem;
+    width: 400px;
+}
+
+#thank-you {
+    text-align: center;
+    padding: 3rem;
+}
+
+#thank-you h1 {
+    margin-bottom: 0.7rem;
+}
+
+#thank-you p {
+    color: hsl(217, 12%, 63%);
+    line-height: 1.4;
+}
+
+#user-selected {
+    margin: 2rem auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#user-selected p{
+    color: hsl(25, 97%, 53%);
+    background-color: hsl(216, 12%, 25%);
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 15rem;
+    height: 1.6rem;
+}
+
+.star-icon {
+    background-color: hsl(216, 12%, 25%);
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+}
+
+#rate-container h1 {
+    margin-bottom: 1rem;
+}
+
+#rate-container p {
+    color: hsl(217, 12%, 63%);
+    line-height: 1.4;
+}
+
+button {
+    cursor: pointer;
+}
+
+.buttons {
+    display: flex;
+}
+
+.rate-btn {
+    background-color: hsl(216, 12%, 25%);
+    border: none;
+    border-radius: 50%;
+    margin: 1.5rem auto;
+    height: 50px;
+    width: 50px;
+}
+
+.rate-btn:hover {
+    background-color:hsl(217, 12%, 63%);
+}
+
+#submit-btn {
+    background-color: hsl(25, 97%, 53%);
+    border: none;
+    border-radius: 30px;
+    height: 50px;
+    width: 100%;
+}
+
+#submit-btn:hover {
+    background-color: white;
+    color: hsl(25, 97%, 53%);
+}
+
+.btn-clicked {
+    background-color: hsl(25, 97%, 53%);
+}
+
+@media (max-width: 415px) {
+    #rate-container, #thank-you {
+        width: 90vw;
+    }
+}
